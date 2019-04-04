@@ -1,7 +1,7 @@
 # API Management workshop
 
 ## Intro
-This tutorial attempts to give insights into how and why to use API Management, when building your API services. It starts from the basics of creating a simple API app, and then to manually configuring API management to connect to that API. It goes on to give examples on how you can secure your API, how to mock API responses, how to do version handling, and more.
+This tutorial attempts to give insights into how and why to use API Management, when building your API services. It starts from the basics of creating a simple API app, and then to manually configure API management to connect to that API. It goes on to give examples on how you can secure your API, how to mock API responses, how to do version handling, and more.
 
 ## Prerequisite
 This instruction assumes that an API management instance is already started. If that is not the case, please follow the istructions <a href="https://docs.microsoft.com/en-us/azure/api-management/get-started-create-service-instance">here</a> to create one: 
@@ -10,13 +10,13 @@ This instruction assumes that an API management instance is already started. If 
 API management service does not host APIs directly. Instead it works like a proxy towards "backend" APIs. The first thing we need to do is to create such an API. 
 
 ### Create API App
-Creating an API app involves a few steps, but it boils down to creating an **App Service plan**, which is the infrastructure in which your API app will run, and then to create the API app it self.
+Creating an API app involves a few steps, but it boils down to creating an **App Service plan**, which is the infrastructure in which your API app will run, to create the API app service, and to upload the code of the API appliction.
 
 1. Sign in to the Azure portal.
 
 2. Click **Create a resource**
 
-3. In the search field, type **API app** eand press enter.
+3. In the search field, type **API app** and press enter.
 
 4. Select the **API App** in the list of services
 
@@ -28,9 +28,9 @@ After a little time, you will see something similar to this
 
 ![Image](./media/create-api-app-2.PNG) 
 
-Now you will input some details bout your **API app**. In the 
+Now you will input some details bout your **API app**.
 
-1. Give the app a nice (and globally unique) name. For instance, use your corporate signum
+1. Give the app a nice (and globally unique) name. For instance using your corporate signum
 
 2. Select the **Subscription** you want to use
 
@@ -54,13 +54,13 @@ Now you will input some details bout your **API app**. In the
 8. Leave the **Application Insights** as default, and the press **Create**
 
 ### Build the API application
-We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
-
 When the API app has completed creating, you will see a view similar to this
 
 ![Image](./media/app-service.PNG) 
 
-Now, select **Quickstart** in the panel to the left. Then, in the blade that opens up, choose **ASP.NET**. You will see something like this:
+We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
+
+Select **Quickstart** in the panel to the left. Then, in the blade that opens up, choose **ASP.NET**. You will see something like this:
 
 ![Image](./media/quickstart.PNG) 
 
