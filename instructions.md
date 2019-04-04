@@ -60,7 +60,8 @@ Now you will input some details bout your **API app**.
 ### Build the API application
 When the API app has completed creating, you will see a view similar to this
 
-![Image](./media/app-service.PNG) 
+![Image](./media/app-service.PNG)
+
 <BR/>
 
 We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
