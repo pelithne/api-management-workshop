@@ -30,7 +30,7 @@ After a little time, you will see something similar to this
 ![Image](./media/create-api-app-2.PNG) 
 <BR/>
 
-Now you will input some details bout your **API app**.
+Now you will input some details about your **API app**.
 
 1. Give the app a nice (and globally unique) name. For instance using your corporate signum
 
@@ -66,7 +66,7 @@ When the API app has completed creating, you will see a view similar to this
 
 We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
 
-Select **Quickstart** in the panel to the left. Then, in the blade that opens up, choose **ASP.NET**. You will see something like this:
+Select **Quickstart** in the panel to the left. Then, in the blade that opens up, choose **ASP.NET** (infact, select any language you want. It does not matter in this excercise, but I have only tested the ASP version...). You will see something like this:
 
 ![Image](./media/quickstart.PNG) 
 
