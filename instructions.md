@@ -111,11 +111,11 @@ From the menu that opens to the right, select **+ Add API**.
 
 Select **Blank API**.
 
-![Image](./media/blank-api.png) 
+![Image](./media/blank-api.PNG) 
 
 In the dialogue that appears, enter a name, a URL to your API app and select **Unlimited** as Product. 
 
-![Image](./media/create-blank-api.png)
+![Image](./media/create-blank-api.PNG)
 
 The click on the **Create** button.
 
@@ -131,7 +131,7 @@ This section shows how to add an operation in order to map it to the back end op
 4. In the URL, select GET and enter "/contacts" in the resource.
 5. Select Save.
 
-![Image](./media/create-operation.png)
+![Image](./media/create-operation.PNG)
 
 
 
@@ -144,7 +144,7 @@ Test the operation in the Azure portal. Alternatively, you can test it in the De
 
 You should see a reponse that looks very similar to what you saw in the browser previously
 
-![Image](./media/test-response.png)
+![Image](./media/test-response.PNG)
 
 
 
