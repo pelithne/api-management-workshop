@@ -125,7 +125,7 @@ The click on the **Create** button.
 After a short while, you will see that your new API has been created. At this point, you have no operations in APIM that map to the operations in your back-end API. If you call an operation that is exposed through the back end but not through the APIM, you get a 404.
 
 ### Add and test an operation
-This section shows how to add an operation in order to map it to the back end operation.
+This section shows how to add an operation in order to map it to the back end operation, and then to test the API.
 
 #### Add an operation
 1. Select the API you created in the previous step.
@@ -139,23 +139,23 @@ This section shows how to add an operation in order to map it to the back end op
 
 
 #### Test an operation
-Test the operation in the Azure portal. Alternatively, you can test it in the Developer portal or using a tool like **Postman**.
+Test the operation in the Azure portal. 
 
 1. Select the Test tab.
 2. Select Contacts.
 3. Press Send.
 
-You should see a reponse that looks very similar to what you saw in the browser previously
+You should see a reponse that looks very similar to what you saw in the browser previously.
 
 ![Image](./media/test-response.PNG)
 
 
-If instead you open up the API URL in a browser, you will get a response similar to this:
+If instead you open up this new API URL in a browser, you will get a response similar to this:
 
 ![Image](./media/missing-sub-key.PNG) 
 <BR/>
 
-As the error message indicates, this is because the API requires a subscription key to allow access. This key should be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
+As the error message indicates, this is because we have protected the API with a subscription. This key needs to be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
 
 The custom header you need to add is named ````Ocp-Apim-Subscription-Key````. You can find this info under ````settings````. 
 
@@ -195,17 +195,7 @@ Another way of defining an API in the API management service, is to import it fr
 
 It so happens that the API App you created previously also includes an Open API Specification, and we will use that interface. The process is very similar to what we did in the previous step.
 
-1. Sign in to the Azure portal, unless already logged in.
-
-2. Select **All services**.
-
-3. In the search box, enter api management.
-
-4. In the search results, select **API Management** services.
-
-5. Select your API Management service instance.
-
-You should see something similar to this:
+Go to your **API Management** page:
 ![Image](./media/manually-add-api-1.PNG) 
 
 ### Create an API 
