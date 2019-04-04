@@ -111,7 +111,7 @@ From the menu that opens to the right, select **+ Add API**.
 
 Select **Blank API**.
 
-![Image](./media/blank-api.PNG) 
+![Image](./media/blank-api.png) 
 
 In the dialogue that appears, enter a name, a URL to your API app and select **Unlimited** as Product. 
 
