@@ -24,6 +24,7 @@ Creating an API app involves a few steps, but it boils down to creating an **App
 
 5. Click **Create**
 
+<BR/>
 After a little time, you will see something similar to this
 
 ![Image](./media/create-api-app-2.PNG) 
