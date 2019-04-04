@@ -74,15 +74,6 @@ You should see something like this:
 
 ![Image](./media/contacts.PNG) 
 
-In the dialogue that opens up, just enter the URI to the swagger definition of the API you created previously. You get to the defenition using the path ````/swagger/docs/v1```` so the URI you should enter will look similar to 
-````
-https://pelithneapp.azurewebsites.net/swagger/docs/v1
-````
-
-When you have entered a correct URI, the API details will be automatically populated, and look similar to this:
-![Image](./media/create-using-openapi.PNG) 
-
-You need to add **API URL Suffix** ````/contacts```` and **Products** ````unlimited```` before clicking **Create**
 
 
 
@@ -178,5 +169,14 @@ Select **OpenAPI**.
 ![Image](./media/openapi.PNG) 
 
 
+In the dialogue that opens up, just enter the URI to the swagger definition of the API you created previously. You get to the defnition using the path ````/swagger/docs/v1```` so the URI you should enter will look similar to 
+````
+https://pelithneapp.azurewebsites.net/swagger/docs/v1
+````
+
+When you have entered a correct URI, the API details will be automatically populated, and look similar to this:
+![Image](./media/create-using-openapi.PNG) 
+
+You need to add **API URL Suffix** ````/contacts```` and **Products** ````unlimited```` before clicking **Create**
 
 
