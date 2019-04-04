@@ -166,6 +166,7 @@ Select APIs from under **API Management**.
 From the menu that opens to the right, select **+ Add API**.
 
 Select **OpenAPI**.
+
 ![Image](./media/openapi.PNG) 
 
 
@@ -178,5 +179,57 @@ When you have entered a correct URI, the API details will be automatically popul
 ![Image](./media/create-using-openapi.PNG) 
 
 You need to add **API URL Suffix** ````/contacts```` and **Products** ````unlimited```` before clicking **Create**
+
+### Test the API
+The procedure to test the API is the same as before
+
+1. Go to your API Management instance
+2. Select the API you created in the previous step
+3. Select the Test tab.
+4. Select Contacts
+
+Here you can make a note of the **Request URL** for later use (you can find this URL under ````settings```` as well)
+
+5. Click the **Send** button
+
+After some time, you should get a response that looks very similar to the test response you received when you tested the interface the previous time.
+
+
+If instead you open up the API URL in a browser, you will get a response similar to this:
+
+![Image](./media/missing-sub-key.PNG) 
+
+As the error message indicates, this is because the API requires a subscription key to allow access. This key should be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman**. 
+
+The custom header you need to add is named ````Ocp-Apim-Subscription-Key````. You can find this info under ````settings````. 
+
+The value for the key can be found in the **Subscription** field of the API Management instance
+![Image](./media/subscription.PNG)
+
+You need the key under ````Product:Unlimited```` because that was the product we used when creating the API. Click on the the dots at the far end to display the key, and make a cpoy of it.
+
+After pasting the URL and the HTTP header into Postman, your request would look something like:
+![Image](./media/postman.PNG) 
+
+You should get a response that, once again, looks the same as before:
+````
+[
+    {
+        "id": 1,
+        "name": "Barney Poland",
+        "email": "barney@contoso.com"
+    },
+    {
+        "id": 2,
+        "name": "Lacy Barrera",
+        "email": "lacy@contoso.com"
+    },
+    {
+        "id": 3,
+        "name": "Lora Riggs",
+        "email": "lora@contoso.com"
+    }
+]
+````
 
 
