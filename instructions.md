@@ -37,6 +37,7 @@ Now you will input some details bout your **API app**. In the
 3. In the **Resource group** section, select **Create new**. By default it will get the same name you gave your API app
 
 4. Next, you need to create a **App Service Plan**. Click on the arrow to the right, and choose **Create new** in the blade that opens up
+
 ![Image](./media/create-new-asp.PNG) 
 
 
@@ -46,7 +47,7 @@ Now you will input some details bout your **API app**. In the
 
 7. Select **Dev/Test** and then **F1** (free) and then **Apply**
 
-![Image](./media/create-new-asp-1.PNG) 
+![Image](./media/create-new-asp-2.PNG) 
 
 7. Press **OK** to create the App Service plan
 
@@ -56,6 +57,7 @@ Now you will input some details bout your **API app**. In the
 We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
 
 When the API app has completed creating, you will see a view similar to this
+
 ![Image](./media/app-service.PNG) 
 
 Now, select **Quickstart** in the panel to the left. Then, in the blade that opens up, choose **ASP.NET**. You will see something like this:
@@ -69,6 +71,7 @@ The address of your newly created API app can be found in the **Overview** page 
 In order to see a response from your app, you can use your browser and navigate to ````https://pelithneapp.azurewebsites.net/contacts````
 
 You should see something like this:
+
 ![Image](./media/contacts.PNG) 
 
 
