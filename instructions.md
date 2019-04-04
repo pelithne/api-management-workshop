@@ -54,6 +54,7 @@ Now you will input some details bout your **API app**.
 
 9. Leave the **Application Insights** as default, and the press **Create** to create the API App.
 
+<BR/>
 ### Build the API application
 When the API app has completed creating, you will see a view similar to this
 
@@ -99,6 +100,7 @@ To start with, you need to access you API management service, by following these
 
 You should see something similar to this:
 ![Image](./media/manually-add-api-1.PNG) 
+<BR/>
 
 ### Create an API 
 Select APIs from under **API Management**.
@@ -114,6 +116,7 @@ In the dialogue that appears, enter a name, a URL to your API app and select **U
 ![Image](./media/create-blank-api.PNG)
 
 The click on the **Create** button.
+<BR/>
 
 After a short while, you will see that your new API has been created. At this point, you have no operations in APIM that map to the operations in your back-end API. If you call an operation that is exposed through the back end but not through the APIM, you get a 404.
 
@@ -169,7 +172,7 @@ From the menu that opens to the right, select **+ Add API**.
 Select **OpenAPI**.
 
 ![Image](./media/openapi.PNG) 
-
+<BR/>
 
 In the dialogue that opens up, just enter the URI to the swagger definition of the API you created previously. You get to the defnition using the path ````/swagger/docs/v1```` so the URI you should enter will look similar to 
 ````
@@ -194,11 +197,12 @@ Here you can make a note of the **Request URL** for later use (you can find this
 5. Click the **Send** button
 
 After some time, you should get a response that looks very similar to the test response you received when you tested the interface the previous time.
-
+<BR/>
 
 If instead you open up the API URL in a browser, you will get a response similar to this:
 
 ![Image](./media/missing-sub-key.PNG) 
+<BR/>
 
 As the error message indicates, this is because the API requires a subscription key to allow access. This key should be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
 
@@ -206,6 +210,7 @@ The custom header you need to add is named ````Ocp-Apim-Subscription-Key````. Yo
 
 The value for the key can be found in the **Subscription** field of the API Management instance
 ![Image](./media/subscription.PNG)
+<BR/>
 
 You need the key under ````Product:Unlimited```` because that was the product we used when creating the API. Click on the the dots at the far end to display the key, and make a copy of it.
 
