@@ -28,6 +28,7 @@ Creating an API app involves a few steps, but it boils down to creating an **App
 After a little time, you will see something similar to this
 
 ![Image](./media/create-api-app-2.PNG) 
+<BR/>
 
 Now you will input some details bout your **API app**.
 
@@ -55,10 +56,12 @@ Now you will input some details bout your **API app**.
 9. Leave the **Application Insights** as default, and the press **Create** to create the API App.
 
 <BR/>
+
 ### Build the API application
 When the API app has completed creating, you will see a view similar to this
 
 ![Image](./media/app-service.PNG) 
+<BR/>
 
 We will use a quickstart from the Azure portal to create the API backend. The quickstart will upload a basic "Contact list" API, and deploy it to your web app.
 
