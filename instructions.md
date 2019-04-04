@@ -237,6 +237,82 @@ If you want to, you can try again to access the URL with **Postman**, and try to
 
 
 
+### Create a new Product
+From the API Management instance, select **Products** in the left hand menu, and then click **Add**. In the blade that opens up, give the product a name (call it **contactlist**), a description and select the **Contact list API**. Then click **Create**
 
+![Image](./media/add-product.PNG) 
 
+<BR/>
+Now the Contact list API belongs to this product, as well as the Unlimited product. YOu can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new (contactlist) product. 
+
+You can now remove the API from the Unlimited product, by going to the Unlimited product, and clicking the three dots next to the Contact list API
+
+![Image](./media/delete-api.PNG) 
+
+<BR/>
+    
+ If, at this point, you try to send a request with Postman using the Subscription key belonging to the Unlimited product, your requst will fail.
+ 
+ ````
+ {
+    "statusCode": 401,
+    "message": "Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription."
+}
+````
+
+If you use the Subscription key from the newly created contactlist product, the request will still be successful
+````
+[
+    {
+        "id": 1,
+        "name": "Barney Poland",
+        "email": "barney@contoso.com"
+    },
+    {
+        "id": 2,
+        "name": "Lacy Barrera",
+        "email": "lacy@contoso.com"
+    },
+    {
+        "id": 3,
+        "name": "Lora Riggs",
+        "email": "lora@contoso.com"
+    }
+]
+````
+
+### Add a policy
+Policies are ways to manipulate the request or the reponse in certain ways. For instance, you can add a policy that modifies a string in the response, to some other string. 
+
+To do this, go to the newly created product (contactlist), the select **Policies**. This will open up a policy editor. In the policy editor, place the curson on the line between ````<outbound>```` and ````</outbound>````. Then click the plus sign next to "find and replace string in body".
+
+Then modify to something similar to the image below, and then **save**
+
+![Image](./media/find-replace.PNG) 
+
+<BR/>
+
+It might take a little time, but after a while you should get a response similar to this instead of the old one:
+
+````
+[
+    {
+        "id": 1,
+        "name": "Barney Poland",
+        "email": "barney@contoso.com"
+    },
+    {
+        "id": 2,
+        "name": "Barry Barrera",
+        "email": "lacy@contoso.com"
+    },
+    {
+        "id": 3,
+        "name": "Lora Riggs",
+        "email": "lora@contoso.com"
+    }
+]
+````
+
+Feel free to experiment with some other Policies before calling this a day! Well done, you have finished this tutorial!
 
