@@ -6,3 +6,6 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/201-api-manageme
 
 ### API MGMT ARM template generator
 http://mlogdberg.com/apimanagement/arm-template-creator
+
+### Create API app with cli
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api
