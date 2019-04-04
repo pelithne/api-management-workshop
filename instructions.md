@@ -199,14 +199,14 @@ If instead you open up the API URL in a browser, you will get a response similar
 
 ![Image](./media/missing-sub-key.PNG) 
 
-As the error message indicates, this is because the API requires a subscription key to allow access. This key should be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman**. 
+As the error message indicates, this is because the API requires a subscription key to allow access. This key should be passed in an HTTP header along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
 
 The custom header you need to add is named ````Ocp-Apim-Subscription-Key````. You can find this info under ````settings````. 
 
 The value for the key can be found in the **Subscription** field of the API Management instance
 ![Image](./media/subscription.PNG)
 
-You need the key under ````Product:Unlimited```` because that was the product we used when creating the API. Click on the the dots at the far end to display the key, and make a cpoy of it.
+You need the key under ````Product:Unlimited```` because that was the product we used when creating the API. Click on the the dots at the far end to display the key, and make a copy of it.
 
 After pasting the URL and the HTTP header into Postman, your request would look something like:
 ![Image](./media/postman.PNG) 
