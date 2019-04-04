@@ -74,11 +74,15 @@ You should see something like this:
 
 ![Image](./media/contacts.PNG) 
 
+In the dialogue that opens up, just enter the URI to the swagger definition of the API you created previously. You get to the defenition using the path ````/swagger/docs/v1```` so the URI you should enter will look similar to 
+````
+https://pelithneapp.azurewebsites.net/swagger/docs/v1
+````
 
+When you have entered a correct URI, the API details will be automatically populated, and look similar to this:
+![Image](./media/create-using-openapi.PNG) 
 
-
-
-
+You need to add **API URL Suffix** ````/contacts```` and **Products** ````unlimited```` before clicking **Create**
 
 
 
@@ -145,6 +149,34 @@ Test the operation in the Azure portal. Alternatively, you can test it in the De
 You should see a reponse that looks very similar to what you saw in the browser previously
 
 ![Image](./media/test-response.PNG)
+
+
+## Import an Open API (swagger)
+Another way of defining an API in the API management service, is to import it from the API Endpoint, using the **Open API Specification** (previously **Swagger**). 
+
+It so happens that the API App you created previously also includes an Open API Specification, and we will use that interface. The process is very similar to what we did in the previous step.
+
+1. Sign in to the Azure portal, unless already logged in.
+
+2. Select **All services**.
+
+3. In the search box, enter api management.
+
+4. In the search results, select **API Management** services.
+
+5. Select your API Management service instance.
+
+You should see something similar to this:
+![Image](./media/manually-add-api-1.PNG) 
+
+### Create an API 
+Select APIs from under **API Management**.
+
+From the menu that opens to the right, select **+ Add API**.
+
+Select **OpenAPI**.
+![Image](./media/openapi.PNG) 
+
 
 
 
