@@ -51,7 +51,7 @@ Now you will input some details bout your **API app**.
 
 7. Press **OK** to create the App Service plan
 
-8. Leave the **Application Insights** as default, and the press **Create**
+8. Leave the **Application Insights** as default, and the press **Create** to create the API App.
 
 ### Build the API application
 When the API app has completed creating, you will see a view similar to this
