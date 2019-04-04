@@ -234,7 +234,7 @@ After some time, you should get a response that looks very similar to the test r
 <BR/>
 
 If you want to, you can try again to access the URL with **Postman**, and try to fix the problem with the missing subscription key.
-
+<BR/>
 
 
 ### Create a new Product
@@ -245,13 +245,15 @@ From the API Management instance, select **Products** in the left hand menu, and
 <BR/>
 Now the Contact list API belongs to this product, as well as the Unlimited product. YOu can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new (contactlist) product. 
 
+<BR/>
+
 You can now remove the API from the Unlimited product, by going to the Unlimited product, and clicking the three dots next to the Contact list API
 
 ![Image](./media/delete-api.PNG) 
 
 <BR/>
     
- If, at this point, you try to send a request with Postman using the Subscription key belonging to the Unlimited product, your requst will fail.
+If, at this point, you try to send a request with Postman using the Subscription key belonging to the Unlimited product, your requst will fail.
  
  ````
  {
@@ -259,6 +261,7 @@ You can now remove the API from the Unlimited product, by going to the Unlimited
     "message": "Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription."
 }
 ````
+<BR/>
 
 If you use the Subscription key from the newly created contactlist product, the request will still be successful
 ````
@@ -280,6 +283,7 @@ If you use the Subscription key from the newly created contactlist product, the 
     }
 ]
 ````
+<BR/>
 
 ### Add a policy
 Policies are ways to manipulate the request or the reponse in certain ways. For instance, you can add a policy that modifies a string in the response, to some other string. 
@@ -313,6 +317,6 @@ It might take a little time, but after a while you should get a response similar
     }
 ]
 ````
-
+<BR/>
 Feel free to experiment with some other Policies before calling this a day! Well done, you have finished this tutorial!
 
