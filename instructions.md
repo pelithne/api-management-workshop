@@ -388,7 +388,7 @@ This is fairly simple to do. Just:
 2. Select the context menu (...) next to it.
 3. Select + Add Version.
 
-![Image](./media/add-version.PNG) 
+![Image](./media/add-version.png) 
 
 <BR/>
 
