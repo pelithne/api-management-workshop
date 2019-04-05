@@ -419,7 +419,7 @@ Now, underneath Contact List API in the API List, you now see two distinct APIs 
 
 2. Click the three dots next to the mocked API operation, and select delete.
 
-![Image](./media/delete-operation.PNG) 
+![Image](./media/delete-operation.png) 
 
 <BR/>
 
