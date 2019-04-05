@@ -238,12 +238,13 @@ If you want to, you can try again to access the URL with **Postman**, and try to
 
 
 ### Create a new Product
-From the API Management instance, select **Products** in the left hand menu, and then click **Add**. In the blade that opens up, give the product a name (call it **contactlist**), a description and select the **Contact list API**. Then click **Create**
+From the API Management instance, select **Products** in the left hand menu, and then click **Add**. In the blade that opens up, give the product a name (call it **contactlist**), a description and select the **Contact list API**. Also, make sure to click the **State toggle** to make sure the product is published. Then click **Create**
 
 ![Image](./media/add-product.PNG) 
 
 <BR/>
-Now the Contact list API belongs to this product, as well as the Unlimited product. YOu can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new (contactlist) product. 
+
+Now the Contact list API belongs to this product, as well as the Unlimited product. You can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new (contactlist) product. 
 
 <BR/>
 
@@ -318,5 +319,114 @@ It might take a little time, but after a while you should get a response similar
 ]
 ````
 <BR/>
-Feel free to experiment with some other Policies before calling this a day! Well done, you have finished this tutorial!
+Feel free to experiment with some other Policies!
+
+## Add a mocked response
+In this part of the tutorial you will learn how to set a policy on an API so it returns a mocked response. This method enables developers to proceed with implementation and testing of the APIM instance even if the backend is not available to send real responses. Ability to mock up responses can be useful in a number of scenarios:
+
+* When the API façade is designed first and the backend implementation comes later. Or, the backend is being developed in parallel.
+* When the backend is temporarily not operational or not able to scale.
+
+### Add new operation (that we will add a mocked response to
+
+1. Select the API you created in the previous step.
+
+2. Click + Add Operation.
+
+3. Define a **Display name** and a **URL** (e.g. /test) and keep **GET** as the method. 
+
+3. Select the Response tab, located under the URL, Display name, and Description fields.
+
+4. Click + Add response.
+
+5. Select 200 OK from the list.
+
+6. Under the Representations heading on the right, select + Add representation.
+
+7. Enter "application/json" into the search box and select the application/json content type.
+
+8. In the Sample text box, enter { 'hello' : 'world' }.
+
+Select **Save**.
+
+### Enable response mocking
+
+1. Select your API
+
+2. Select the test operation that you added.
+
+4. In the window on the right, click the Design tab.
+
+5. In the Inbound processing window, click + Add policy.
+
+6. Select the Mock responses tile from the gallery.
+
+7. In the API Management response textbox, type 200 OK, application/json. This selection indicates that your API should return the response sample you defined in the previous section.
+
+### Test the mocked API
+1. Select your API
+
+2. Open the Test tab.
+
+3. Ensure the Test call API is selected.
+
+4. Select Send to make a test call.
+
+5. The HTTP response displays the JSON provided as a sample in the first section of the tutorial.
+
+
+## Versioning
+Adding an operation is typically not a breaking change to an API, so the version does not necessarily have to change. However, if we realize that the new operation was not any good, and we want to remove it, we are introducing a breaking change. 
+
+
+### Add new version
+We are going to remove an operation on our API, without breaking the current one. In order to do that we first create a new version of the API.
+
+This is fairly simple to do. Just:
+
+1. Select Contact List API from the API list.
+2. Select the context menu (...) next to it.
+3. Select + Add Version.
+
+![Image](./media/add-version.PNG) 
+
+<BR/>
+
+### Choose a versioning scheme
+Azure API Management allows you to choose the way in which you allow callers to specify which version of your API they want. You specify which API version to use by selecting a versioning scheme. This scheme can be either path, header or query string. In the following example, path is used to select the versioning scheme.
+
+Leave path selected as your **versioning scheme**.
+
+Type contact-list-v2 in the **Name field**.
+
+Type v2 in the **Version identifier** field.
+
+Select **Create** to set up your new version.
+
+![Image](./media/add-version-2.PNG) 
+
+<BR/>
+
+Now, underneath Contact List API in the API List, you now see two distinct APIs - Original, and v2. You can now edit and configure v2 as an API that is separate to Original. Changes to one version do not affect another.
+
+![Image](./media/add-version-3.PNG) 
+
+<BR/>
+
+### Remove the mocked operation
+
+1. Select your API (Contact List API v2)
+
+2. Click the three dots next to the mocked API operation, and select delete.
+
+![Image](./media/delete-operation.PNG) 
+
+<BR/>
+
+Now we have a new version of the API, which again does not have the mocked operation available. 
+
+This concludes the tutorial! Well Done! 
+
+
+
 
