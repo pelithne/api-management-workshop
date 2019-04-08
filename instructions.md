@@ -335,13 +335,15 @@ In this part of the tutorial you will learn how to set a policy on an API so it 
 
 3. Define a **Display name** and a **URL** (e.g. /test) and keep **GET** as the method. 
 
+![Image](./media/mock-1.png) 
+<BR/>
+
+
 3. Select the **Responses** tab, located under the URL, Display name, and Description fields.
 
 4. Click + Add response.
 
 5. Select 200 OK from the list.
-![Image](./media/mock-1.png) 
-<BR/>
 
 6. Under the Representations heading on the right, select + Add representation.
 
