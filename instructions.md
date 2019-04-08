@@ -224,7 +224,7 @@ Unfortunately, the web service URL does not get autmatically configured for your
 
 Select the newly created API (Contact List), and go to the **Settings** tab. In the **Web Service URL** enter the URI of the API backend, like so:
 
-![Image](./media/add-web-service-url.PNG) 
+![Image](./media/swagger-backendurl.PNG) 
 
 ### Test the API
 The procedure to test the API is the same as before
