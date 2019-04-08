@@ -214,7 +214,7 @@ https://pelithneapp.azurewebsites.net/swagger/docs/v1
 ````
 
 When you have entered a correct URI, the API details will be automatically populated, and look similar to this:
-![Image](./media/create-from-openapi.PNG) create-from-openapi
+![Image](./media/create-from-openapi.PNG)
 
 You need to add **Products** ````unlimited```` before clicking **Create**
 
