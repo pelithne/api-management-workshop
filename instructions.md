@@ -340,7 +340,7 @@ In this part of the tutorial you will learn how to set a policy on an API so it 
 4. Click + Add response.
 
 5. Select 200 OK from the list.
-![Image](./media/mock-1.PNG) 
+![Image](./media/mock-1.png) 
 <BR/>
 
 6. Under the Representations heading on the right, select + Add representation.
