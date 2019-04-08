@@ -428,5 +428,15 @@ Now we have a new version of the API, which again does not have the mocked opera
 This concludes the tutorial! Well Done! 
 
 
+## Finished early? Need some extra work? Of course!
 
+Transform and protect your API:  https://docs.microsoft.com/en-us/azure/api-management/transform-api
+
+Monitor your APIs: https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-use-azure-monitor
+
+Debug your API: https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-api-inspector
+
+Add revisions: https://docs.microsoft.com/en-us/azure/api-management/api-management-get-started-revise-api
+
+Customize the developer portal: https://docs.microsoft.com/en-us/azure/api-management/api-management-customize-styles
 
