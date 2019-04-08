@@ -327,7 +327,7 @@ In this part of the tutorial you will learn how to set a policy on an API so it 
 * When the API façade is designed first and the backend implementation comes later. Or, the backend is being developed in parallel.
 * When the backend is temporarily not operational or not able to scale.
 
-### Add new operation (that we will add a mocked response to
+### Add new operation (that we will add a mocked response to your API)
 
 1. Select the API you created in the previous step.
 
@@ -335,17 +335,21 @@ In this part of the tutorial you will learn how to set a policy on an API so it 
 
 3. Define a **Display name** and a **URL** (e.g. /test) and keep **GET** as the method. 
 
-3. Select the Response tab, located under the URL, Display name, and Description fields.
+3. Select the **Responses** tab, located under the URL, Display name, and Description fields.
 
 4. Click + Add response.
 
 5. Select 200 OK from the list.
+![Image](./media/mock-1.PNG) 
+<BR/>
 
 6. Under the Representations heading on the right, select + Add representation.
 
 7. Enter "application/json" into the search box and select the application/json content type.
 
 8. In the Sample text box, enter { 'hello' : 'world' }.
+![Image](./media/mock-2.PNG) 
+<BR/>
 
 Select **Save**.
 
@@ -355,11 +359,15 @@ Select **Save**.
 
 2. Select the test operation that you added.
 
-4. In the window on the right, click the Design tab.
+4. In the window on the right, click the Design tab (unless its already selected).
+![Image](./media/mock-3.PNG) 
+<BR/>
 
 5. In the Inbound processing window, click + Add policy.
 
 6. Select the Mock responses tile from the gallery.
+![Image](./media/mock-4.PNG) 
+<BR/>
 
 7. In the API Management response textbox, type 200 OK, application/json. This selection indicates that your API should return the response sample you defined in the previous section.
 
