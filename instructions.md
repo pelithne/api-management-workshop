@@ -361,7 +361,7 @@ In this part of the tutorial you will learn how to set a policy on an API so it 
 7. Enter "application/json" into the search box and select the application/json content type.
 
 8. In the Sample text box, enter { 'hello' : 'world' }.
-![Image](./media/mock-2.PNG) 
+![Image](./media/hello-world.PNG) 
 <BR/>
 
 Select **Save**.
