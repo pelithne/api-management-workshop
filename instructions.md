@@ -216,7 +216,15 @@ https://pelithneapp.azurewebsites.net/swagger/docs/v1
 When you have entered a correct URI, the API details will be automatically populated, and look similar to this:
 ![Image](./media/create-using-openapi.PNG) 
 
-You need to add **API URL Suffix** ````/contacts```` and **Products** ````unlimited```` before clicking **Create**
+You need to add **Products** ````unlimited```` before clicking **Create**
+
+### Handle missing Web service URL
+
+Unfortunately, the web service URL does not get autmatically configured for your API endpoint, so you have to add that (again).
+
+Select the newly created API (Contact List), and go to the **Settings** tab. In the **Web Service URL** enter the URI of the API backend, like so:
+
+![Image](./media/add-web-service-url.PNG) 
 
 ### Test the API
 The procedure to test the API is the same as before
