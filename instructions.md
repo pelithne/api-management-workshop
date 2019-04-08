@@ -440,3 +440,4 @@ Add revisions: https://docs.microsoft.com/en-us/azure/api-management/api-managem
 
 Customize the developer portal: https://docs.microsoft.com/en-us/azure/api-management/api-management-customize-styles
 
+Configure using git: https://docs.microsoft.com/en-us/azure/api-management/api-management-configuration-repository-git
