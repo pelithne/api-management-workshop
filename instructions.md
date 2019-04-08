@@ -155,7 +155,7 @@ If instead you open up this new API URL in a browser, you will get a response si
 ![Image](./media/missing-sub-key.PNG) 
 <BR/>
 
-As the error message indicates, this is because we have protected the API with a subscription. This key needs to be passed in an **HTTP header** along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
+As the error message indicates, this is because we have protected the API with a **subscription key**. This key needs to be passed in an **HTTP header** along with the GET request. One easy way of sending an HTTP request with a custom HTTP header is to use the tool **Postman** (https://www.getpostman.com/). 
 
 The custom header you need to add is named ````Ocp-Apim-Subscription-Key````. You can find this info under ````settings````. 
 
