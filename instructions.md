@@ -246,13 +246,13 @@ If you want to, you can try again to access the URL with **Postman**, and try to
 
 
 ### Create a new Product
-From the API Management instance, select **Products** in the left hand menu, and then click **Add**. In the blade that opens up, give the product a name (call it **contactlist**), a description and select the **Contact list API**. Also, make sure to click the **State toggle** to make sure the product is published. Then click **Create**
+From the API Management instance, select **Products** in the left hand menu, and then click **Add**. In the blade that opens up, give the product a **name**, a description and select the **Contact list API**. Also, make sure to click the **State toggle** to make sure the product is published. Then click **Create**
 
 ![Image](./media/add-product.PNG) 
 
 <BR/>
 
-Now the Contact list API belongs to this product, as well as the Unlimited product. You can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new (contactlist) product. 
+Now the Contact list API belongs to this product, as well as the Unlimited product. You can try this out by using Postman to send a GET request to the API URL again, but this time using the subscription key that belongs to the new product. 
 
 <BR/>
 
@@ -272,7 +272,7 @@ If, at this point, you try to send a request with Postman using the Subscription
 ````
 <BR/>
 
-If you use the Subscription key from the newly created contactlist product, the request will still be successful
+If you use the Subscription key from the newly created product, the request will still be successful
 ````
 [
     {
@@ -297,7 +297,7 @@ If you use the Subscription key from the newly created contactlist product, the 
 ### Add a policy
 Policies are ways to manipulate the request or the reponse in certain ways. For instance, you can add a policy that modifies a string in the response, to some other string. 
 
-To do this, go to the newly created product (contactlist), the select **Policies**. This will open up a policy editor. In the policy editor, place the curson on the line between ````<outbound>```` and ````</outbound>````. Then click the plus sign next to "find and replace string in body".
+To do this, go to the newly created product, the select **Policies**. This will open up a policy editor. In the policy editor, place the curson on the line between ````<outbound>```` and ````</outbound>````. Then click the plus sign next to "find and replace string in body".
 
 Then modify to something similar to the image below, and then **save**
 
