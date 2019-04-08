@@ -36,7 +36,7 @@ Now you will input some details about your **API app**.
 
 2. Select the **Subscription** you want to use
 
-3. In the **Resource group** section, select **Create new**. By default it will get the same name you gave your API app
+3. Select the **Resource group** you want to use
 
 4. Next, you need to create a **App Service Plan**. Click on the arrow to the right, and choose **Create new** in the blade that opens up
 
