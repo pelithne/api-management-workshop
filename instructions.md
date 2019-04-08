@@ -376,6 +376,10 @@ Select **Save**.
 
 7. In the API Management response textbox, type 200 OK, application/json. This selection indicates that your API should return the response sample you defined in the previous section.
 
+![Image](./media/mock-5.PNG) 
+<BR/>
+
+
 ### Test the mocked API
 1. Select your API
 
